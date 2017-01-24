@@ -6,4 +6,18 @@ class LandingsController < ApplicationController
 			  redirect_to  member_dashboard_path
 	end
   end
+
+  def contactus
+  	info = ContactUs.new(contact_params)
+  	if info.save 
+  		render text: "true"
+  	else
+  		render text: "false"
+  	end
+  end
+
+ protected
+  def contact_params
+  	params.permit(:name, :email, :subject, :message)
+  end
 end

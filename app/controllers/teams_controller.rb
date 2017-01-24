@@ -12,6 +12,7 @@ class TeamsController < ApplicationController
    end
 
    def index
+    # @teams = Team.all
    end
 
    def add_member

@@ -16,3 +16,6 @@ Rails.application.config.assets.precompile += %w( dashboard.js )
 Rails.application.config.assets.precompile += %w( wizard.css )
 Rails.application.config.assets.precompile += %w( wizard.js )
 
+#landing page js
+Rails.application.config.assets.precompile += %w( landings.js )
+

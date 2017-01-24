@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "dashboard", to: "members#dashboard", as:'member_dashboard'
   get "dashboard/account", to: "members#account", as: 'member_account'
   get 'landings/index'
+  post "/contact", to: "landings#contactus",  as: "contact"
 
 
   resources :teams do
